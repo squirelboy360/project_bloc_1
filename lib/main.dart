@@ -34,7 +34,18 @@ class Home extends StatelessWidget {
        Text('0',style: TextStyle(fontSize: 50),)],
        ),
       ),
+      floatingActionButton: Column(
+        mainAxisAlignment: MainAxisAlignment.end,
+        children: [
+          FloatingActionButton(onPressed: (){
 
+          }, backgroundColor: Colors.pinkAccent,elevation: 0,child: const Icon(Icons.add,),),
+          const SizedBox(height: 10,),
+          FloatingActionButton(onPressed: (){
+
+          }, backgroundColor: Colors.pinkAccent,elevation: 0,child: const Icon(Icons.exposure_minus_1),)
+        ],
+      ),
     );
   }
 }
