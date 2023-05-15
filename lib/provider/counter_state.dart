@@ -1,6 +1,11 @@
-part of 'counter_bloc.dart';
+part of 'counter_cubit.dart';
 
-@immutable
-abstract class CounterState {}
 
-class CounterInitial extends CounterState {}
+class CounterState {
+  int numValue;
+
+
+  CounterState({
+    required this.numValue
+});
+}
